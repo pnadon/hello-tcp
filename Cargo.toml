@@ -1,5 +1,5 @@
 [package]
-name = "hello-tcp"
+name = "hello_tcp"
 version = "0.1.0"
 authors = ["Philippe Nadon <phil@nadon.io>"]
 edition = "2018"
