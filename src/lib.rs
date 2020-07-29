@@ -1,3 +1,11 @@
+//===----------------------------------------------------------------------===//
+// lib.rs
+// 
+// This source file is part of the hello-tcp project
+//
+// Copyright (c) 2020 Philippe Nadon
+// Licensed under Apache License v2.0
+//===----------------------------------------------------------------------===//
 use std::sync::Arc;
 use std::sync::Mutex;
 use std::thread;

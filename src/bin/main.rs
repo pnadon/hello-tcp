@@ -1,3 +1,11 @@
+//===----------------------------------------------------------------------===//
+// main.rs
+// 
+// This source file is part of the hello-tcp project
+//
+// Copyright (c) 2020 Philippe Nadon
+// Licensed under Apache License v2.0
+//===----------------------------------------------------------------------===//
 use std::io::prelude::*;
 use std::net::TcpListener;
 use std::net::TcpStream;
@@ -19,6 +27,12 @@ fn main() {
     }
 }
 
+/// Handles incoming connections
+/// 
+/// stream: An incoming TCP stream
+/// 
+/// TODO: Create html "file server"
+/// TODO: Handle "directory sanitization (sandbox)"
 fn handle_connection(mut stream: TcpStream) {
     let mut buffer = [0; 1024];
     stream.read(&mut buffer).unwrap();
